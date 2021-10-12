@@ -138,3 +138,62 @@ body {
     max-width: 21.094rem;
   }
 }
+
+@media (min-width: 75rem) {
+  body {
+    min-height: 100vh;
+    background-image: url(./images/bg-desktop.png);
+    /* background-repeat: repeat; */
+    background-position: left 0 top 300px;
+    background-color: var(--veryDarkBlue);
+    overflow: hidden;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .container {
+    max-width: 55rem;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin: 10rem auto;
+  }
+
+  .component-one {
+    flex-basis: 40%;
+    margin-bottom: 0;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+  }
+
+  .component-two {
+    flex-basis: 58%;
+    margin-bottom: 0;
+  }
+
+  .component-three {
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    width: 200px;
+    border-bottom-right-radius: 0;
+    /* display: none; */
+  }
+
+  .component-three::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: var(--paleBlue);
+    position: absolute;
+    bottom: -0.7rem;
+    right: 0rem;
+    transform: skewY(50deg);
+  }
+}
