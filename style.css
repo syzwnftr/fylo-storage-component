@@ -16,15 +16,24 @@
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+main {
   background-image: url("./images/bg-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  /* outline: 1px solid black; */
+  outline: 1px solid black;
   max-width: 90%;
-  margin: 5rem auto;
+  flex-basis: 100%;
+  /* margin: 0 auto; */
 }
 
 .component {
@@ -108,7 +117,7 @@ body {
 }
 
 .component-three {
-  background-color: var(--paleBlue);
+  background-color: white;
   width: 50%;
   color: var(--grayishBlue);
   padding: 1rem;
@@ -126,7 +135,7 @@ body {
 
 .amount {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-right: 0.5rem;
   color: var(--veryDarkBlue);
 }
@@ -140,20 +149,20 @@ body {
 }
 
 @media (min-width: 75rem) {
-  body {
-    min-height: 100vh;
-    background-image: url(./images/bg-desktop.png);
-    /* background-repeat: repeat; */
-    background-position: left 0 top 300px;
+  main {
     background-color: var(--veryDarkBlue);
-    overflow: hidden;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    background-image: url("./images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    min-height: 100vh;
+    flex-direction: row;
+    align-items: center;
   }
 
   .container {
     max-width: 55rem;
+    flex-basis: 100%;
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -190,7 +199,7 @@ body {
     content: "";
     width: 30px;
     height: 30px;
-    background-color: var(--paleBlue);
+    background-color: white;
     position: absolute;
     bottom: -0.7rem;
     right: 0rem;
