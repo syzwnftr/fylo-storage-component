@@ -30,7 +30,6 @@ main {
 }
 
 .container {
-  /* outline: 1px solid black; */
   max-width: 90%;
   flex-basis: 100%;
 }
@@ -42,7 +41,6 @@ main {
 }
 
 .component-one {
-  /* outline: 1px solid white; */
   border-top-right-radius: 5rem;
   margin-bottom: 1.5rem;
 }
@@ -52,7 +50,6 @@ main {
 }
 
 .box {
-  /* outline: 1px solid white; */
   display: flex;
   justify-content: flex-start;
 }
@@ -84,7 +81,6 @@ main {
 }
 
 .outer {
-  /* outline: 1px solid white; */
   padding: 0.3rem;
   margin-bottom: 0.5rem;
   background-color: var(--veryDarkBlue);
@@ -187,7 +183,6 @@ main {
   }
 
   .item:hover {
-    /* background-color: var(--veryDarkBlue); */
     animation: upDown 0.5s ease-in-out alternate infinite;
     animation-fill-mode: forwards;
   }
