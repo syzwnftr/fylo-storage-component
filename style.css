@@ -66,7 +66,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
 
 .item:hover {
@@ -184,6 +184,22 @@ main {
     flex-direction: column;
     justify-content: space-around;
     height: 200px;
+  }
+
+  .item:hover {
+    /* background-color: var(--veryDarkBlue); */
+    animation: upDown 0.5s ease-in-out alternate infinite;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes upDown {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-15px);
+    }
   }
 
   .component-two {
