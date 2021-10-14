@@ -223,7 +223,9 @@ main {
 }
 
 @media (min-width: 90rem) {
-  /* main {
-    background-position: bottom -100% left 0;
-  } */
+  main {
+    /* background-size: contain; */
+    background-position-y: bottom;
+    background-size: 100% 50%;
+  }
 }
