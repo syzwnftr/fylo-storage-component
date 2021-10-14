@@ -154,7 +154,7 @@ main {
     background-color: var(--veryDarkBlue);
     background-image: url("./images/bg-desktop.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     background-position: bottom -30% left 0;
     min-height: 100vh;
     flex-direction: row;
