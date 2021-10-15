@@ -70,13 +70,14 @@ main {
   background-color: var(--paleBlue);
 }
 
-.component-two p {
+.component-two h1 {
   color: var(--paleBlue);
   margin-bottom: 1rem;
   font-size: 0.875rem;
+  font-weight: 300;
 }
 
-.component-two p span {
+.component-two h1 span {
   font-weight: 700;
 }
 
@@ -114,6 +115,9 @@ main {
 }
 
 .usage p {
+  color: var(--paleBlue);
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
 }
 
@@ -224,7 +228,6 @@ main {
 
 @media (min-width: 90rem) {
   main {
-    /* background-size: contain; */
     background-position-y: bottom;
     background-size: 100% 50%;
   }
